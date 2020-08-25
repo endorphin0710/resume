@@ -25,6 +25,11 @@
         }
       }
 
+      function aa(){
+        var a = document.getElementById('inputid').textContent;
+        document.getElementById('content').textContent = a;
+      }
+
     </script>
   </head>
   <body onload="start()">
@@ -126,10 +131,10 @@
             </div>
           </div>
           <div class="about-div">
-            <form>
-              <input type="text"/>
-              <input type="submit"/>
-            </form>
+            
+              <input id="inputid" type="text"/>
+              <button onclick="aa()">aa</button>
+              
             <label lang="en">
               Hello, I am Juntae KIM.<br>
               As of this Summer, I just started my career as a junior mobile application developer in South Korea.<br>
